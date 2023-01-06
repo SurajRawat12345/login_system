@@ -1,3 +1,4 @@
+require('dotenv').config();
 // Required modules / libraries
 const express = require('express');
 const morgan = require('morgan');

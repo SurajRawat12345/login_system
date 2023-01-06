@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 
-const dbUri ='mongodb+srv://Suri:test1234@logininfo.o5uvzjh.mongodb.net/?retryWrites=true&w=majority';
+const dbUri = process.env.SECRET_KEY;
 let dbConnection;
 
 module.exports = {
