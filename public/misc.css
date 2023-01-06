@@ -1,0 +1,62 @@
+:root{
+    --color1 : #70d6ff;
+    --color2 : #000000;
+    --color3 : #ff0000;
+    --color4 : #dc0344;
+}
+body{
+    background-color : var(--color2);
+    font-size : 20px;
+    text-align : center;
+}
+.success{
+    color : var(--color1);
+    margin-bottom: 3rem;
+}
+a.go_back{
+    color : var(--color1);
+    text-decoration : none;
+    border :  0.25rem solid var(--color1);
+    padding : 1rem;
+    border-radius: 20%;
+}
+back_404{
+    margin-top: 0rem;
+}
+.e404{
+    color : var(--color3);
+}
+.tag{
+    color : var(--color4);
+    background-color : var(--color2);
+    font-size : 1.5rem;
+}
+.eligible{
+    font-size : 1.5rem;
+    color : var(--color4);
+}
+.Icybear{
+    width : 15rem;
+}
+.Grizz{
+    width : 15rem;
+}
+@media screen and (max-width : 400px) {
+    .Grizz{
+        width : 10rem;
+    }
+    .success{
+        margin-bottom: 0.5rem;
+    }
+    .eligible{
+        margin-top: 0.1rem;
+    }
+}
+@media screen and (max-width : 250px) {
+    .cont{
+        font-size: 15px;
+    }
+    .Icybear{
+        width : 10rem;
+    }
+}

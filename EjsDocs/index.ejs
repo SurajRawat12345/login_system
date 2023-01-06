@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login </title>
+    <link rel="stylesheet" href="login.css">
+    <%- include('../partials/tagline.ejs')  %> 
+</head>
+<body>
+    <div class="container">
+        <div class="login_heading">
+            LOGIN <hr color="black">
+        </div>
+        <div class="login_form">
+            <form action="/login" method="POST">
+                <label class="label"> USERNAME* </label><br>
+                <input class="input"placeholder = "Eg : John Doe" name = "username" type="text" autocomplete="off" required><br><br>
+                <label class="label"> PASSWORD* </label><br>
+                <input class="input"placeholder = "4-digit Password" min="0" name = "password" type="number" autocomplete="off" required><br><br>
+                <button id="inner" class="button"> LOG IN </button>
+                <a href="/create_new_user" class="new_user"> New User </a>
+            </form>    
+        </div>
+
+    </div>
+</body>
+</html>

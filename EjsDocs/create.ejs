@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> New User + </title>
+    <link rel="stylesheet" href="/login.css">
+    <%- include('../partials/tagline.ejs')  %> 
+</head>
+<body>
+    <div class="container">
+        <div class="login_heading">
+            NEW USER <hr color="black">
+        </div>
+        <div class="login_form">
+            <form action="/create_new_user" method="POST">
+                <label class="label"> USERNAME* </label><br>
+                <input class="input"placeholder = "Eg : John Doe" name = "username" type="text" autocomplete="off" required><br><br>
+                <label class="label"> PASSWORD* </label><br>
+                <input class="input"placeholder = "4-digit Password " name = "password" type="number" autocomplete="off" min="0" required><br><br>
+                <button id="in" class="button"> Create </button>
+            </form>    
+        </div>
+    </div>
+</body>
+</html>
